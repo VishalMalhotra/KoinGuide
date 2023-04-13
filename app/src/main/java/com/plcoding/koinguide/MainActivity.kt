@@ -26,7 +26,7 @@ class MainActivity : ComponentActivity(), AndroidScopeComponent {
 //    private val viewModel by viewModel<MainViewModel>()
 
     override val scope: Scope by activityScope()
-    private val hello by inject<String>(named("bye"))
+    private val hello by inject<String>(named("hello"))
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
